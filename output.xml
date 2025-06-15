@@ -1,27 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.9.1 on win32)" generated="20250615 18:23:43.546" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.9.1 on win32)" generated="20250615 18:43:16.042" rpa="false" schemaversion="3">
 <suite id="s1" name="TC1" source="C:\RobotFrameWork_UI\TestCases\TC1.robot">
 <test id="s1-t1" name="LoginTest" line="8">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>https://demo.nopcommerce.com/</arg>
+<arg>https://www.saucedemo.com/</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20250615 18:23:43.944" level="INFO">Opening browser 'Chrome' to base url 'https://demo.nopcommerce.com/'.</msg>
-<status status="PASS" starttime="20250615 18:23:43.943" endtime="20250615 18:23:46.945"/>
+<msg timestamp="20250615 18:43:16.480" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<status status="PASS" starttime="20250615 18:43:16.479" endtime="20250615 18:43:18.722"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20250615 18:23:46.951" endtime="20250615 18:23:47.265"/>
+<status status="PASS" starttime="20250615 18:43:18.735" endtime="20250615 18:43:19.267"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:user-name</arg>
+<arg>standard_user</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20250615 18:43:19.270" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
+<status status="PASS" starttime="20250615 18:43:19.268" endtime="20250615 18:43:19.502"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:password</arg>
+<arg>secret_sauce</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20250615 18:43:19.503" level="INFO">Typing text 'secret_sauce' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20250615 18:43:19.503" endtime="20250615 18:43:19.664"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id:login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20250615 18:43:19.666" level="INFO">Clicking button 'id:login-button'.</msg>
+<status status="PASS" starttime="20250615 18:43:19.665" endtime="20250615 18:43:19.932"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20250615 18:23:52.277" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20250615 18:23:47.273" endtime="20250615 18:23:52.277"/>
+<msg timestamp="20250615 18:43:24.949" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20250615 18:43:19.934" endtime="20250615 18:43:24.949"/>
 </kw>
-<status status="PASS" starttime="20250615 18:23:43.942" endtime="20250615 18:23:52.278"/>
+<status status="PASS" starttime="20250615 18:43:16.478" endtime="20250615 18:43:24.951"/>
 </test>
-<status status="PASS" starttime="20250615 18:23:43.549" endtime="20250615 18:23:52.281"/>
+<status status="PASS" starttime="20250615 18:43:16.046" endtime="20250615 18:43:24.953"/>
 </suite>
 <statistics>
 <total>
