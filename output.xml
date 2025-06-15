@@ -1,75 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.9.1 on win32)" generated="20250615 21:20:31.679" rpa="false" schemaversion="3">
-<suite id="s1" name="inputBox" source="C:\RobotFrameWork_UI\TestCases\inputBox.robot">
-<test id="s1-t1" name="LoginTest" line="10">
-<kw name="OpenBrower">
+<robot generator="Robot 6.0.2 (Python 3.9.1 on win32)" generated="20250615 21:49:22.853" rpa="false" schemaversion="3">
+<suite id="s1" name="demoqaElements" source="C:\RobotFrameWork_UI\TestCases\demoqaElements.robot">
+<test id="s1-t1" name="Home Page" line="8">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${url}</arg>
-<arg>${browser}</arg>
+<arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20250615 21:20:32.516" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
-<status status="PASS" starttime="20250615 21:20:32.511" endtime="20250615 21:20:35.622"/>
+<msg timestamp="20250615 21:49:23.258" level="INFO">Opening browser 'Chrome' to base url 'https://demoqa.com/'.</msg>
+<status status="PASS" starttime="20250615 21:49:23.257" endtime="20250615 21:49:28.259"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20250615 21:20:35.622" endtime="20250615 21:20:36.489"/>
+<status status="PASS" starttime="20250615 21:49:28.260" endtime="20250615 21:49:28.312"/>
 </kw>
-<status status="PASS" starttime="20250615 21:20:32.511" endtime="20250615 21:20:36.490"/>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20250615 21:49:28.320" level="INFO">Executing JavaScript:
+window.scrollTo(0, document.body.scrollHeight)
+Without any arguments.</msg>
+<status status="PASS" starttime="20250615 21:49:28.313" endtime="20250615 21:49:28.337"/>
 </kw>
-<kw name="VerifyTitle">
-<kw name="Title Should Be" library="SeleniumLibrary">
-<arg>Swag Labs</arg>
-<doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20250615 21:20:36.504" level="INFO">Page title is 'Swag Labs'.</msg>
-<status status="PASS" starttime="20250615 21:20:36.491" endtime="20250615 21:20:36.504"/>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//h5[text()='Elements']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20250615 21:49:28.338" endtime="20250615 21:49:28.419"/>
 </kw>
-<status status="PASS" starttime="20250615 21:20:36.490" endtime="20250615 21:20:36.504"/>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//h5[text()='Elements']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20250615 21:49:28.421" level="INFO">Clicking element '//h5[text()='Elements']'.</msg>
+<status status="PASS" starttime="20250615 21:49:28.420" endtime="20250615 21:49:28.795"/>
 </kw>
-<kw name="Set Variable" library="BuiltIn">
-<var>${email_text}</var>
-<arg>id:user-name</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20250615 21:20:36.508" level="INFO">${email_text} = id:user-name</msg>
-<status status="PASS" starttime="20250615 21:20:36.506" endtime="20250615 21:20:36.508"/>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20250615 21:49:30.810" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20250615 21:49:28.797" endtime="20250615 21:49:30.810"/>
 </kw>
-<kw name="Element Should Be Visible" library="SeleniumLibrary">
-<arg>${email_text}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20250615 21:20:36.621" level="INFO">Element 'id:user-name' is displayed.</msg>
-<status status="PASS" starttime="20250615 21:20:36.508" endtime="20250615 21:20:36.621"/>
-</kw>
-<kw name="Element Should Be Enabled" library="SeleniumLibrary">
-<arg>${email_text}</arg>
-<doc>Verifies that element identified by ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20250615 21:20:36.622" endtime="20250615 21:20:36.692"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${email_text}</arg>
-<arg>pritifuse</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20250615 21:20:36.693" level="INFO">Typing text 'pritifuse' into text field 'id:user-name'.</msg>
-<status status="PASS" starttime="20250615 21:20:36.693" endtime="20250615 21:20:36.987"/>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[text()='Check Box']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20250615 21:49:30.812" level="INFO">Clicking element '//span[text()='Check Box']'.</msg>
+<status status="PASS" starttime="20250615 21:49:30.811" endtime="20250615 21:49:31.125"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20250615 21:20:41.999" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20250615 21:20:36.988" endtime="20250615 21:20:41.999"/>
+<msg timestamp="20250615 21:49:36.172" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20250615 21:49:31.167" endtime="20250615 21:49:36.172"/>
 </kw>
-<kw name="Clear Element Text" library="SeleniumLibrary">
-<arg>${email_text}</arg>
-<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" starttime="20250615 21:20:42.000" endtime="20250615 21:20:42.045"/>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@title='Expand all']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20250615 21:49:36.174" level="INFO">Clicking element '//button[@title='Expand all']'.</msg>
+<status status="PASS" starttime="20250615 21:49:36.173" endtime="20250615 21:49:36.321"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>3</arg>
+<arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20250615 21:20:45.048" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20250615 21:20:42.046" endtime="20250615 21:20:45.048"/>
+<msg timestamp="20250615 21:49:38.336" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20250615 21:49:36.324" endtime="20250615 21:49:38.336"/>
 </kw>
-<status status="PASS" starttime="20250615 21:20:32.510" endtime="20250615 21:20:45.049"/>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@title='Collapse all']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20250615 21:49:38.338" level="INFO">Clicking element '//button[@title='Collapse all']'.</msg>
+<status status="PASS" starttime="20250615 21:49:38.338" endtime="20250615 21:49:38.425"/>
+</kw>
+<status status="PASS" starttime="20250615 21:49:23.256" endtime="20250615 21:49:38.427"/>
 </test>
-<status status="PASS" starttime="20250615 21:20:31.682" endtime="20250615 21:20:45.051"/>
+<status status="PASS" starttime="20250615 21:49:22.856" endtime="20250615 21:49:38.429"/>
 </suite>
 <statistics>
 <total>
@@ -78,7 +79,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="inputBox">inputBox</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="demoqaElements">demoqaElements</stat>
 </suite>
 </statistics>
 <errors>
