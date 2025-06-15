@@ -17,4 +17,7 @@ Home Page
     Click Element    //button[@title='Expand all']
     Sleep    2
     Click Element    //button[@title='Collapse all']
-
+    Sleep    2
+    Click Element    //button[@title='Toggle']
+    
+    Sleep    5

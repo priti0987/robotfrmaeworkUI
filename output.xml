@@ -1,76 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.9.1 on win32)" generated="20250615 21:49:22.853" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.9.1 on win32)" generated="20250615 21:59:55.438" rpa="false" schemaversion="3">
 <suite id="s1" name="demoqaElements" source="C:\RobotFrameWork_UI\TestCases\demoqaElements.robot">
 <test id="s1-t1" name="Home Page" line="8">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${url}</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20250615 21:49:23.258" level="INFO">Opening browser 'Chrome' to base url 'https://demoqa.com/'.</msg>
-<status status="PASS" starttime="20250615 21:49:23.257" endtime="20250615 21:49:28.259"/>
+<msg timestamp="20250615 21:59:55.849" level="INFO">Opening browser 'Chrome' to base url 'https://demoqa.com/'.</msg>
+<status status="PASS" starttime="20250615 21:59:55.848" endtime="20250615 22:00:00.949"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20250615 21:49:28.260" endtime="20250615 21:49:28.312"/>
+<status status="PASS" starttime="20250615 22:00:00.951" endtime="20250615 22:00:01.008"/>
 </kw>
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>window.scrollTo(0, document.body.scrollHeight)</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20250615 21:49:28.320" level="INFO">Executing JavaScript:
+<msg timestamp="20250615 22:00:01.015" level="INFO">Executing JavaScript:
 window.scrollTo(0, document.body.scrollHeight)
 Without any arguments.</msg>
-<status status="PASS" starttime="20250615 21:49:28.313" endtime="20250615 21:49:28.337"/>
+<status status="PASS" starttime="20250615 22:00:01.011" endtime="20250615 22:00:01.032"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//h5[text()='Elements']</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20250615 21:49:28.338" endtime="20250615 21:49:28.419"/>
+<status status="PASS" starttime="20250615 22:00:01.033" endtime="20250615 22:00:01.090"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//h5[text()='Elements']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20250615 21:49:28.421" level="INFO">Clicking element '//h5[text()='Elements']'.</msg>
-<status status="PASS" starttime="20250615 21:49:28.420" endtime="20250615 21:49:28.795"/>
+<msg timestamp="20250615 22:00:01.091" level="INFO">Clicking element '//h5[text()='Elements']'.</msg>
+<status status="PASS" starttime="20250615 22:00:01.091" endtime="20250615 22:00:01.312"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20250615 21:49:30.810" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20250615 21:49:28.797" endtime="20250615 21:49:30.810"/>
+<msg timestamp="20250615 22:00:03.329" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20250615 22:00:01.312" endtime="20250615 22:00:03.329"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//span[text()='Check Box']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20250615 21:49:30.812" level="INFO">Clicking element '//span[text()='Check Box']'.</msg>
-<status status="PASS" starttime="20250615 21:49:30.811" endtime="20250615 21:49:31.125"/>
+<msg timestamp="20250615 22:00:03.331" level="INFO">Clicking element '//span[text()='Check Box']'.</msg>
+<status status="PASS" starttime="20250615 22:00:03.330" endtime="20250615 22:00:04.880"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20250615 21:49:36.172" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20250615 21:49:31.167" endtime="20250615 21:49:36.172"/>
+<msg timestamp="20250615 22:00:09.891" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20250615 22:00:04.881" endtime="20250615 22:00:09.892"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//button[@title='Expand all']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20250615 21:49:36.174" level="INFO">Clicking element '//button[@title='Expand all']'.</msg>
-<status status="PASS" starttime="20250615 21:49:36.173" endtime="20250615 21:49:36.321"/>
+<msg timestamp="20250615 22:00:09.896" level="INFO">Clicking element '//button[@title='Expand all']'.</msg>
+<status status="PASS" starttime="20250615 22:00:09.895" endtime="20250615 22:00:10.073"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20250615 21:49:38.336" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20250615 21:49:36.324" endtime="20250615 21:49:38.336"/>
+<msg timestamp="20250615 22:00:12.093" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20250615 22:00:10.082" endtime="20250615 22:00:12.093"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//button[@title='Collapse all']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20250615 21:49:38.338" level="INFO">Clicking element '//button[@title='Collapse all']'.</msg>
-<status status="PASS" starttime="20250615 21:49:38.338" endtime="20250615 21:49:38.425"/>
+<msg timestamp="20250615 22:00:12.094" level="INFO">Clicking element '//button[@title='Collapse all']'.</msg>
+<status status="PASS" starttime="20250615 22:00:12.094" endtime="20250615 22:00:12.182"/>
 </kw>
-<status status="PASS" starttime="20250615 21:49:23.256" endtime="20250615 21:49:38.427"/>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20250615 22:00:14.195" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20250615 22:00:12.183" endtime="20250615 22:00:14.195"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@title='Toggle']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20250615 22:00:14.197" level="INFO">Clicking element '//button[@title='Toggle']'.</msg>
+<status status="PASS" starttime="20250615 22:00:14.196" endtime="20250615 22:00:14.287"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20250615 22:00:19.291" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20250615 22:00:14.288" endtime="20250615 22:00:19.292"/>
+</kw>
+<status status="PASS" starttime="20250615 21:59:55.847" endtime="20250615 22:00:19.292"/>
 </test>
-<status status="PASS" starttime="20250615 21:49:22.856" endtime="20250615 21:49:38.429"/>
+<status status="PASS" starttime="20250615 21:59:55.441" endtime="20250615 22:00:19.294"/>
 </suite>
 <statistics>
 <total>
