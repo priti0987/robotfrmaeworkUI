@@ -12,13 +12,9 @@ Home Page
     Wait Until Element Is Visible    //h5[text()='Elements']
     Click Element    //h5[text()='Elements']
     Sleep    2
-    Click Element    //span[text()='Check Box']
-    Sleep    5
-    Execute JavaScript    window.scrollTo(0, document.body.scrollHeight)
-
-    Click Element    //button[@title='Expand all']
-    Sleep    3
-#    Click Element    //button[@title='Collapse all']
-#    Sleep    2
-#    Click Element    //button[@title='Toggle']
+    Click Element    //span[text()='Radio Button']
+    Sleep    2
+    ${name_radio}    Get Element Attribute    //input[@type='radio']    name
+#    Select Radio Button    group_name    value
+    #Select Radio Button    like    Yes
     Sleep    5
