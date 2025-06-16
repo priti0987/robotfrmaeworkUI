@@ -1,110 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.9.1 on win32)" generated="20250616 15:03:00.392" rpa="false" schemaversion="3">
-<suite id="s1" name="radioButtonYatra" source="C:\RobotFrameWork_UI\TestCases\radioButtonYatra.robot">
-<test id="s1-t1" name="Home Page" line="8">
+<robot generator="Robot 6.0.2 (Python 3.9.1 on win32)" generated="20250616 17:24:08.066" rpa="false" schemaversion="3">
+<suite id="s1" name="Wait" source="C:\RobotFrameWork_UI\TestCases\wait.robot">
+<test id="s1-t1" name="HomePage" line="10">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${url}</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20250616 15:03:00.815" level="INFO">Opening browser 'Chrome' to base url 'https://yatra.in/'.</msg>
-<status status="PASS" starttime="20250616 15:03:00.814" endtime="20250616 15:03:07.059"/>
+<msg timestamp="20250616 17:24:08.454" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<status status="PASS" starttime="20250616 17:24:08.453" endtime="20250616 17:24:10.218"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20250616 15:03:07.063" endtime="20250616 15:03:07.202"/>
-</kw>
-<status status="PASS" starttime="20250616 15:03:00.813" endtime="20250616 15:03:07.203"/>
-</test>
-<test id="s1-t2" name="Click on Train" line="12">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>//button[contains(@aria-label,'Trains')]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20250616 15:03:07.207" level="INFO">Clicking element '//button[contains(@aria-label,'Trains')]'.</msg>
-<status status="PASS" starttime="20250616 15:03:07.205" endtime="20250616 15:03:07.785"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20250616 15:03:08.789" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20250616 15:03:07.786" endtime="20250616 15:03:08.790"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>//p[text()='Depart From']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20250616 15:03:08.792" level="INFO">Clicking element '//p[text()='Depart From']'.</msg>
-<status status="PASS" starttime="20250616 15:03:08.791" endtime="20250616 15:03:09.614"/>
-</kw>
-<status status="PASS" starttime="20250616 15:03:07.204" endtime="20250616 15:03:09.625"/>
-</test>
-<test id="s1-t3" name="Select sourceDestination" line="17">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>//input[@type='text']</arg>
-<arg>CSTM</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20250616 15:03:09.628" level="INFO">Typing text 'CSTM' into text field '//input[@type='text']'.</msg>
-<status status="PASS" starttime="20250616 15:03:09.627" endtime="20250616 15:03:09.769"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20250616 15:03:10.771" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20250616 15:03:09.770" endtime="20250616 15:03:10.772"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>//div[contains(text(),'(CSTM)')]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20250616 15:03:10.776" level="INFO">Clicking element '//div[contains(text(),'(CSTM)')]'.</msg>
-<status status="PASS" starttime="20250616 15:03:10.774" endtime="20250616 15:03:11.032"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20250616 15:03:12.042" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20250616 15:03:11.033" endtime="20250616 15:03:12.042"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>//p[text()='Going To']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20250616 15:03:12.044" level="INFO">Clicking element '//p[text()='Going To']'.</msg>
-<status status="PASS" starttime="20250616 15:03:12.043" endtime="20250616 15:03:12.219"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20250616 15:03:13.227" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20250616 15:03:12.219" endtime="20250616 15:03:13.228"/>
+<status status="PASS" starttime="20250616 17:24:10.221" endtime="20250616 17:24:10.743"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
-<arg>//input[@type='text']</arg>
-<arg>HYB</arg>
+<arg>user-name</arg>
+<arg>${userName}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20250616 15:03:13.231" level="INFO">Typing text 'HYB' into text field '//input[@type='text']'.</msg>
-<status status="PASS" starttime="20250616 15:03:13.229" endtime="20250616 15:03:13.518"/>
+<msg timestamp="20250616 17:24:10.751" level="INFO">Typing text 'standard_user' into text field 'user-name'.</msg>
+<status status="PASS" starttime="20250616 17:24:10.749" endtime="20250616 17:24:11.020"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20250616 15:03:14.535" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20250616 15:03:13.519" endtime="20250616 15:03:14.536"/>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20250616 17:24:11.025" level="INFO">Typing text 'secret_sauce' into text field 'password'.</msg>
+<status status="PASS" starttime="20250616 17:24:11.024" endtime="20250616 17:24:11.213"/>
 </kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>//div[contains(text(),'(HYB)')]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20250616 15:03:14.540" level="INFO">Clicking element '//div[contains(text(),'(HYB)')]'.</msg>
-<status status="PASS" starttime="20250616 15:03:14.538" endtime="20250616 15:03:14.815"/>
-</kw>
-<status status="PASS" starttime="20250616 15:03:09.626" endtime="20250616 15:03:14.822"/>
+<status status="PASS" starttime="20250616 17:24:08.452" endtime="20250616 17:24:11.217"/>
 </test>
-<status status="PASS" starttime="20250616 15:03:00.396" endtime="20250616 15:03:14.825"/>
+<status status="PASS" starttime="20250616 17:24:08.069" endtime="20250616 17:24:11.221"/>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="3" fail="0" skip="0" id="s1" name="radioButtonYatra">radioButtonYatra</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Wait">Wait</stat>
 </suite>
 </statistics>
 <errors>
