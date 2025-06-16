@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.9.1 on win32)" generated="20250616 07:01:57.537" rpa="false">
+<robot generator="Robot 3.2.2 (Python 3.9.1 on win32)" generated="20250616 07:06:32.720" rpa="false">
 <suite id="s1" name="radioButtonAmazon" source="C:\RobotFrameWork_UI\TestCases\radioButtonAmazon.robot">
 <test id="s1-t1" name="Home Page">
 <kw name="Open Browser" library="SeleniumLibrary">
@@ -8,12 +8,12 @@
 <arg>${url}</arg>
 <arg>Chrome</arg>
 </arguments>
-<msg timestamp="20250616 07:01:58.978" level="INFO">Opening browser 'Chrome' to base url 'https://amazon.in/'.</msg>
-<status status="PASS" starttime="20250616 07:01:58.977" endtime="20250616 07:02:05.768"></status>
+<msg timestamp="20250616 07:06:33.163" level="INFO">Opening browser 'Chrome' to base url 'https://amazon.in/'.</msg>
+<status status="PASS" starttime="20250616 07:06:33.162" endtime="20250616 07:06:39.570"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20250616 07:02:05.772" endtime="20250616 07:02:06.312"></status>
+<status status="PASS" starttime="20250616 07:06:39.571" endtime="20250616 07:06:39.761"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -21,28 +21,39 @@
 <arg>//input[@type='text']</arg>
 <arg>mobile</arg>
 </arguments>
-<msg timestamp="20250616 07:02:06.313" level="INFO">Typing text 'mobile' into text field '//input[@type='text']'.</msg>
-<status status="PASS" starttime="20250616 07:02:06.313" endtime="20250616 07:02:07.416"></status>
+<msg timestamp="20250616 07:06:39.763" level="INFO">Typing text 'mobile' into text field '//input[@type='text']'.</msg>
+<status status="PASS" starttime="20250616 07:06:39.762" endtime="20250616 07:06:40.330"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks the button identified by ``locator``.</doc>
 <arguments>
 <arg>//input[contains(@id,'submit-button')]</arg>
 </arguments>
-<msg timestamp="20250616 07:02:07.417" level="INFO">Clicking button '//input[contains(@id,'submit-button')]'.</msg>
-<status status="PASS" starttime="20250616 07:02:07.416" endtime="20250616 07:02:11.021"></status>
+<msg timestamp="20250616 07:06:40.332" level="INFO">Clicking button '//input[contains(@id,'submit-button')]'.</msg>
+<status status="PASS" starttime="20250616 07:06:40.331" endtime="20250616 07:06:43.593"></status>
+</kw>
+<kw name="Get WebElement" library="SeleniumLibrary">
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<arguments>
+<arg>//input[@type='checkbox']</arg>
+</arguments>
+<assign>
+<var>${listOfCheckBox}</var>
+</assign>
+<msg timestamp="20250616 07:06:43.678" level="INFO">${listOfCheckBox} = &lt;selenium.webdriver.remote.webelement.WebElement (session="193de82d91710ae722911d11b04fab39", element="f.B2779A0B0220D756EE8EEB89700B264D.d.5C3B208964B631964493E3A85F71E0F6.e.131")&gt;</msg>
+<status status="PASS" starttime="20250616 07:06:43.594" endtime="20250616 07:06:43.678"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5</arg>
 </arguments>
-<msg timestamp="20250616 07:02:16.037" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20250616 07:02:11.022" endtime="20250616 07:02:16.038"></status>
+<msg timestamp="20250616 07:06:48.684" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20250616 07:06:43.678" endtime="20250616 07:06:48.685"></status>
 </kw>
-<status status="PASS" starttime="20250616 07:01:58.975" endtime="20250616 07:02:16.039" critical="yes"></status>
+<status status="PASS" starttime="20250616 07:06:33.161" endtime="20250616 07:06:48.685" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20250616 07:01:57.547" endtime="20250616 07:02:16.042"></status>
+<status status="PASS" starttime="20250616 07:06:32.726" endtime="20250616 07:06:48.688"></status>
 </suite>
 <statistics>
 <total>
@@ -56,11 +67,5 @@
 </suite>
 </statistics>
 <errors>
-</errors>
-</robot>
-onIdException: Message: invalid session id: session deleted as the browser has closed the connection
-from disconnected: not connected to DevTools
-  (Session info: chrome=137.0.7151.104)
-</msg>
 </errors>
 </robot>
