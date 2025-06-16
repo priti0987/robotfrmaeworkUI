@@ -22,6 +22,7 @@ OpenBrower
     Open Browser    ${url}          ${browser}
     Maximize Browser Window
 
+
 VerifyTitle
     Title Should Be    Swag Labs
 
