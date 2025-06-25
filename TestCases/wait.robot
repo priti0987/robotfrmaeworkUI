@@ -10,10 +10,17 @@ ${password}     secret_sauce
 Login
     Open Browser    ${url}      Chrome
     Maximize Browser Window
+    ${getim_wait}       Get Selenium Implicit Wait
+    Set Browser Implicit Wait    2
+    ${getim_wait}       Get Selenium Implicit Wait
     Title Should Be    Swag Labs
     Input Text    user-name    ${userName}
     Input Text    password    ${password}
     Click Element    login-button
+    Sleep    2
     Wait Until Element Is Visible    //span[text()='Products']
-    Element Should Be Visible    locator
-    Sleep    15
+    Set Selenium Speed    1
+    ${sTime}    Get Selenium Speed
+    Log    ${sTime}
+    Set Selenium Timeout    5
+    Sleep    2
