@@ -10,5 +10,6 @@ myTest
     Open Browser    https://www.icicibank.com       Chrome
     Maximize Browser Window
 
-    Close Browser
+    #Close Browser
+    Close All Browsers
     Sleep    2
