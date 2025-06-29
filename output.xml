@@ -1,27 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.9.1 on win32)" generated="20250629 23:03:05.323" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.9.1 on win32)" generated="20250630 00:16:03.278" rpa="false" schemaversion="3">
 <suite id="s1" name="Alerts" source="C:\RobotFrameWork_UI\TestCases\alerts.robot">
 <test id="s1-t1" name="Handling Alert" line="5">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>https://testautomationpractice.blogspot.com/</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20250629 23:03:06.052" level="INFO">Opening browser 'Chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
-<status status="PASS" starttime="20250629 23:03:06.052" endtime="20250629 23:03:16.850"/>
+<msg timestamp="20250630 00:16:03.699" level="INFO">Opening browser 'Chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<status status="PASS" starttime="20250630 00:16:03.699" endtime="20250630 00:16:13.713"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20250629 23:03:16.851" endtime="20250629 23:03:16.896"/>
+<status status="PASS" starttime="20250630 00:16:13.715" endtime="20250630 00:16:13.778"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>//button[text()='Simple Alert']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20250629 23:03:16.900" level="INFO">Clicking button '//button[text()='Simple Alert']'.</msg>
-<status status="PASS" starttime="20250629 23:03:16.898" endtime="20250629 23:03:17.084"/>
+<msg timestamp="20250630 00:16:13.781" level="INFO">Clicking button '//button[text()='Simple Alert']'.</msg>
+<status status="PASS" starttime="20250630 00:16:13.778" endtime="20250630 00:16:13.987"/>
 </kw>
-<status status="PASS" starttime="20250629 23:03:06.051" endtime="20250629 23:03:17.084"/>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20250630 00:16:15.990" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20250630 00:16:13.987" endtime="20250630 00:16:15.990"/>
+</kw>
+<kw name="Handle Alert" library="SeleniumLibrary">
+<arg>action=accept</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<msg timestamp="20250630 00:16:15.993" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<status status="PASS" starttime="20250630 00:16:15.992" endtime="20250630 00:16:16.025"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20250630 00:16:18.053" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20250630 00:16:16.040" endtime="20250630 00:16:18.053"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//button[text()='Simple Alert']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20250630 00:16:18.057" level="INFO">Clicking button '//button[text()='Simple Alert']'.</msg>
+<status status="PASS" starttime="20250630 00:16:18.055" endtime="20250630 00:16:18.382"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20250630 00:16:20.403" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20250630 00:16:18.392" endtime="20250630 00:16:20.403"/>
+</kw>
+<kw name="Handle Alert" library="SeleniumLibrary">
+<arg>action=dismiss</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<msg timestamp="20250630 00:16:20.405" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<status status="PASS" starttime="20250630 00:16:20.405" endtime="20250630 00:16:20.423"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20250630 00:16:22.451" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20250630 00:16:20.444" endtime="20250630 00:16:22.451"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//button[text()='Simple Alert']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20250630 00:16:22.452" level="INFO">Clicking button '//button[text()='Simple Alert']'.</msg>
+<status status="PASS" starttime="20250630 00:16:22.452" endtime="20250630 00:16:22.560"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20250630 00:16:24.577" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20250630 00:16:22.561" endtime="20250630 00:16:24.577"/>
+</kw>
+<kw name="Handle Alert" library="SeleniumLibrary">
+<arg>action=leave</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<msg timestamp="20250630 00:16:24.579" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<status status="PASS" starttime="20250630 00:16:24.578" endtime="20250630 00:16:24.586"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20250630 00:16:26.601" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20250630 00:16:24.589" endtime="20250630 00:16:26.601"/>
+</kw>
+<status status="PASS" starttime="20250630 00:16:03.698" endtime="20250630 00:16:26.603"/>
 </test>
-<status status="PASS" starttime="20250629 23:03:05.327" endtime="20250629 23:03:17.086"/>
+<status status="PASS" starttime="20250630 00:16:03.282" endtime="20250630 00:16:26.608"/>
 </suite>
 <statistics>
 <total>
