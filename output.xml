@@ -1,104 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.9.1 on win32)" generated="20250630 00:16:03.278" rpa="false" schemaversion="3">
-<suite id="s1" name="Alerts" source="C:\RobotFrameWork_UI\TestCases\alerts.robot">
-<test id="s1-t1" name="Handling Alert" line="5">
+<robot generator="Robot 6.0.2 (Python 3.9.1 on win32)" generated="20250630 18:39:56.829" rpa="false" schemaversion="3">
+<suite id="s1" name="Frames" source="C:\RobotFrameWork_UI\TestCases\frames.robot">
+<test id="s1-t1" name="Handling Frame" line="5">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>https://testautomationpractice.blogspot.com/</arg>
+<arg>https://demoqa.com/alertsWindows</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20250630 00:16:03.699" level="INFO">Opening browser 'Chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
-<status status="PASS" starttime="20250630 00:16:03.699" endtime="20250630 00:16:13.713"/>
+<msg timestamp="20250630 18:39:57.270" level="INFO">Opening browser 'Chrome' to base url 'https://demoqa.com/alertsWindows'.</msg>
+<status status="PASS" starttime="20250630 18:39:57.269" endtime="20250630 18:41:37.104"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20250630 00:16:13.715" endtime="20250630 00:16:13.778"/>
-</kw>
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>//button[text()='Simple Alert']</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20250630 00:16:13.781" level="INFO">Clicking button '//button[text()='Simple Alert']'.</msg>
-<status status="PASS" starttime="20250630 00:16:13.778" endtime="20250630 00:16:13.987"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20250630 00:16:15.990" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20250630 00:16:13.987" endtime="20250630 00:16:15.990"/>
-</kw>
-<kw name="Handle Alert" library="SeleniumLibrary">
-<arg>action=accept</arg>
-<doc>Handles the current alert and returns its message.</doc>
-<msg timestamp="20250630 00:16:15.993" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
-<status status="PASS" starttime="20250630 00:16:15.992" endtime="20250630 00:16:16.025"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20250630 00:16:18.053" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20250630 00:16:16.040" endtime="20250630 00:16:18.053"/>
-</kw>
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>//button[text()='Simple Alert']</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20250630 00:16:18.057" level="INFO">Clicking button '//button[text()='Simple Alert']'.</msg>
-<status status="PASS" starttime="20250630 00:16:18.055" endtime="20250630 00:16:18.382"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20250630 00:16:20.403" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20250630 00:16:18.392" endtime="20250630 00:16:20.403"/>
-</kw>
-<kw name="Handle Alert" library="SeleniumLibrary">
-<arg>action=dismiss</arg>
-<doc>Handles the current alert and returns its message.</doc>
-<msg timestamp="20250630 00:16:20.405" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
-<status status="PASS" starttime="20250630 00:16:20.405" endtime="20250630 00:16:20.423"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20250630 00:16:22.451" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20250630 00:16:20.444" endtime="20250630 00:16:22.451"/>
-</kw>
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>//button[text()='Simple Alert']</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20250630 00:16:22.452" level="INFO">Clicking button '//button[text()='Simple Alert']'.</msg>
-<status status="PASS" starttime="20250630 00:16:22.452" endtime="20250630 00:16:22.560"/>
+<msg timestamp="20250630 18:41:37.128" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=137.0.7151.120)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7CE7024F5+78069]
+	GetHandleVerifier [0x00007FF7CE702550+78160]
+	(No symbol) [0x00007FF7CE4B933A]
+	(No symbol) [0x00007FF7CE491B81]
+	(No symbol) [0x00007FF7CE53EDBE]
+	(No symbol) [0x00007FF7CE55EE32]
+	(No symbol) [0x00007FF7CE5372A3]
+	(No symbol) [0x00007FF7CE5007B8]
+	(No symbol) [0x00007FF7CE501523]
+	GetHandleVerifier [0x00007FF7CE9AFF5D+2886493]
+	GetHandleVerifier [0x00007FF7CE9AA848+2864200]
+	GetHandleVerifier [0x00007FF7CE9C7BD3+2983891]
+	GetHandleVerifier [0x00007FF7CE71CF9A+187290]
+	GetHandleVerifier [0x00007FF7CE72548F+221327]
+	GetHandleVerifier [0x00007FF7CE70A4E4+110820]
+	GetHandleVerifier [0x00007FF7CE70A692+111250]
+	GetHandleVerifier [0x00007FF7CE6F0919+5401]
+	BaseThreadInitThunk [0x00007FFCBA8A7374+20]
+	RtlUserThreadStart [0x00007FFCBC01CC91+33]
+</msg>
+<msg timestamp="20250630 18:41:37.164" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=137.0.7151.120)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7CE7024F5+78069]
+	GetHandleVerifier [0x00007FF7CE702550+78160]
+	(No symbol) [0x00007FF7CE4B933A]
+	(No symbol) [0x00007FF7CE491B81]
+	(No symbol) [0x00007FF7CE53EDBE]
+	(No symbol) [0x00007FF7CE55EE32]
+	(No symbol) [0x00007FF7CE5372A3]
+	(No symbol) [0x00007FF7CE5007B8]
+	(No symbol) [0x00007FF7CE501523]
+	GetHandleVerifier [0x00007FF7CE9AFF5D+2886493]
+	GetHandleVerifier [0x00007FF7CE9AA848+2864200]
+	GetHandleVerifier [0x00007FF7CE9C7BD3+2983891]
+	GetHandleVerifier [0x00007FF7CE71CF9A+187290]
+	GetHandleVerifier [0x00007FF7CE72548F+221327]
+	GetHandleVerifier [0x00007FF7CE70A4E4+110820]
+	GetHandleVerifier [0x00007FF7CE70A692+111250]
+	GetHandleVerifier [0x00007FF7CE6F0919+5401]
+	BaseThreadInitThunk [0x00007FFCBA8A7374+20]
+	RtlUserThreadStart [0x00007FFCBC01CC91+33]
+</msg>
+<status status="FAIL" starttime="20250630 18:41:37.113" endtime="20250630 18:41:37.212"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
+<arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20250630 00:16:24.577" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20250630 00:16:22.561" endtime="20250630 00:16:24.577"/>
+<status status="NOT RUN" starttime="20250630 18:41:37.213" endtime="20250630 18:41:37.213"/>
 </kw>
-<kw name="Handle Alert" library="SeleniumLibrary">
-<arg>action=leave</arg>
-<doc>Handles the current alert and returns its message.</doc>
-<msg timestamp="20250630 00:16:24.579" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
-<status status="PASS" starttime="20250630 00:16:24.578" endtime="20250630 00:16:24.586"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20250630 00:16:26.601" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20250630 00:16:24.589" endtime="20250630 00:16:26.601"/>
-</kw>
-<status status="PASS" starttime="20250630 00:16:03.698" endtime="20250630 00:16:26.603"/>
+<status status="FAIL" starttime="20250630 18:39:57.268" endtime="20250630 18:41:37.213">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=137.0.7151.120)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7CE7024F5+78069]
+	GetHandleVerifier [0x00007FF7CE702550+78160]
+	(No symbol) [0x00007FF7CE4B933A]
+	(No symbol) [0x00007FF7CE491B81]
+	(No symbol) [0x00007FF7CE53EDBE]
+	(No symbol) [0x00007FF7CE55EE32]
+	(No symbol) [0x00007FF7CE5372A3]
+	(No symbol) [0x00007FF7CE5007B8]
+	(No symbol) [0x00007FF7CE501523]
+	GetHandleVerifier [0x00007FF7CE9AFF5D+2886493]
+	GetHandleVerifier [0x00007FF7CE9AA848+2864200]
+	GetHandleVerifier [0x00007FF7CE9C7BD3+2983891]
+	GetHandleVerifier [0x00007FF7CE71CF9A+187290]
+	GetHandleVerifier [0x00007FF7CE72548F+221327]
+	GetHandleVerifier [0x00007FF7CE70A4E4+110820]
+	GetHandleVerifier [0x00007FF7CE70A692+111250]
+	GetHandleVerifier [0x00007FF7CE6F0919+5401]
+	BaseThreadInitThunk [0x00007FFCBA8A7374+20]
+	RtlUserThreadStart [0x00007FFCBC01CC91+33]
+</status>
 </test>
-<status status="PASS" starttime="20250630 00:16:03.282" endtime="20250630 00:16:26.608"/>
+<status status="FAIL" starttime="20250630 18:39:56.833" endtime="20250630 18:41:37.219"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Alerts">Alerts</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Frames">Frames</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20250630 18:41:37.128" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=137.0.7151.120)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7CE7024F5+78069]
+	GetHandleVerifier [0x00007FF7CE702550+78160]
+	(No symbol) [0x00007FF7CE4B933A]
+	(No symbol) [0x00007FF7CE491B81]
+	(No symbol) [0x00007FF7CE53EDBE]
+	(No symbol) [0x00007FF7CE55EE32]
+	(No symbol) [0x00007FF7CE5372A3]
+	(No symbol) [0x00007FF7CE5007B8]
+	(No symbol) [0x00007FF7CE501523]
+	GetHandleVerifier [0x00007FF7CE9AFF5D+2886493]
+	GetHandleVerifier [0x00007FF7CE9AA848+2864200]
+	GetHandleVerifier [0x00007FF7CE9C7BD3+2983891]
+	GetHandleVerifier [0x00007FF7CE71CF9A+187290]
+	GetHandleVerifier [0x00007FF7CE72548F+221327]
+	GetHandleVerifier [0x00007FF7CE70A4E4+110820]
+	GetHandleVerifier [0x00007FF7CE70A692+111250]
+	GetHandleVerifier [0x00007FF7CE6F0919+5401]
+	BaseThreadInitThunk [0x00007FFCBA8A7374+20]
+	RtlUserThreadStart [0x00007FFCBC01CC91+33]
+</msg>
 </errors>
 </robot>
