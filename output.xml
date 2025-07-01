@@ -1,132 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.9.1 on win32)" generated="20250630 18:39:56.829" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.9.1 on win32)" generated="20250701 23:20:48.716" rpa="false" schemaversion="3">
 <suite id="s1" name="Frames" source="C:\RobotFrameWork_UI\TestCases\frames.robot">
 <test id="s1-t1" name="Handling Frame" line="5">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>https://demoqa.com/alertsWindows</arg>
+<arg>https://demoqa.com</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20250630 18:39:57.270" level="INFO">Opening browser 'Chrome' to base url 'https://demoqa.com/alertsWindows'.</msg>
-<status status="PASS" starttime="20250630 18:39:57.269" endtime="20250630 18:41:37.104"/>
+<msg timestamp="20250701 23:20:49.268" level="INFO">Opening browser 'Chrome' to base url 'https://demoqa.com'.</msg>
+<status status="PASS" starttime="20250701 23:20:49.267" endtime="20250701 23:20:57.369"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<msg timestamp="20250630 18:41:37.128" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=137.0.7151.120)
-Stacktrace:
-	GetHandleVerifier [0x00007FF7CE7024F5+78069]
-	GetHandleVerifier [0x00007FF7CE702550+78160]
-	(No symbol) [0x00007FF7CE4B933A]
-	(No symbol) [0x00007FF7CE491B81]
-	(No symbol) [0x00007FF7CE53EDBE]
-	(No symbol) [0x00007FF7CE55EE32]
-	(No symbol) [0x00007FF7CE5372A3]
-	(No symbol) [0x00007FF7CE5007B8]
-	(No symbol) [0x00007FF7CE501523]
-	GetHandleVerifier [0x00007FF7CE9AFF5D+2886493]
-	GetHandleVerifier [0x00007FF7CE9AA848+2864200]
-	GetHandleVerifier [0x00007FF7CE9C7BD3+2983891]
-	GetHandleVerifier [0x00007FF7CE71CF9A+187290]
-	GetHandleVerifier [0x00007FF7CE72548F+221327]
-	GetHandleVerifier [0x00007FF7CE70A4E4+110820]
-	GetHandleVerifier [0x00007FF7CE70A692+111250]
-	GetHandleVerifier [0x00007FF7CE6F0919+5401]
-	BaseThreadInitThunk [0x00007FFCBA8A7374+20]
-	RtlUserThreadStart [0x00007FFCBC01CC91+33]
-</msg>
-<msg timestamp="20250630 18:41:37.164" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=137.0.7151.120)
-Stacktrace:
-	GetHandleVerifier [0x00007FF7CE7024F5+78069]
-	GetHandleVerifier [0x00007FF7CE702550+78160]
-	(No symbol) [0x00007FF7CE4B933A]
-	(No symbol) [0x00007FF7CE491B81]
-	(No symbol) [0x00007FF7CE53EDBE]
-	(No symbol) [0x00007FF7CE55EE32]
-	(No symbol) [0x00007FF7CE5372A3]
-	(No symbol) [0x00007FF7CE5007B8]
-	(No symbol) [0x00007FF7CE501523]
-	GetHandleVerifier [0x00007FF7CE9AFF5D+2886493]
-	GetHandleVerifier [0x00007FF7CE9AA848+2864200]
-	GetHandleVerifier [0x00007FF7CE9C7BD3+2983891]
-	GetHandleVerifier [0x00007FF7CE71CF9A+187290]
-	GetHandleVerifier [0x00007FF7CE72548F+221327]
-	GetHandleVerifier [0x00007FF7CE70A4E4+110820]
-	GetHandleVerifier [0x00007FF7CE70A692+111250]
-	GetHandleVerifier [0x00007FF7CE6F0919+5401]
-	BaseThreadInitThunk [0x00007FFCBA8A7374+20]
-	RtlUserThreadStart [0x00007FFCBC01CC91+33]
-</msg>
-<status status="FAIL" starttime="20250630 18:41:37.113" endtime="20250630 18:41:37.212"/>
+<status status="PASS" starttime="20250701 23:20:57.370" endtime="20250701 23:20:57.418"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>5</arg>
+<arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20250630 18:41:37.213" endtime="20250630 18:41:37.213"/>
+<msg timestamp="20250701 23:20:59.428" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20250701 23:20:57.418" endtime="20250701 23:20:59.428"/>
 </kw>
-<status status="FAIL" starttime="20250630 18:39:57.268" endtime="20250630 18:41:37.213">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=137.0.7151.120)
-Stacktrace:
-	GetHandleVerifier [0x00007FF7CE7024F5+78069]
-	GetHandleVerifier [0x00007FF7CE702550+78160]
-	(No symbol) [0x00007FF7CE4B933A]
-	(No symbol) [0x00007FF7CE491B81]
-	(No symbol) [0x00007FF7CE53EDBE]
-	(No symbol) [0x00007FF7CE55EE32]
-	(No symbol) [0x00007FF7CE5372A3]
-	(No symbol) [0x00007FF7CE5007B8]
-	(No symbol) [0x00007FF7CE501523]
-	GetHandleVerifier [0x00007FF7CE9AFF5D+2886493]
-	GetHandleVerifier [0x00007FF7CE9AA848+2864200]
-	GetHandleVerifier [0x00007FF7CE9C7BD3+2983891]
-	GetHandleVerifier [0x00007FF7CE71CF9A+187290]
-	GetHandleVerifier [0x00007FF7CE72548F+221327]
-	GetHandleVerifier [0x00007FF7CE70A4E4+110820]
-	GetHandleVerifier [0x00007FF7CE70A692+111250]
-	GetHandleVerifier [0x00007FF7CE6F0919+5401]
-	BaseThreadInitThunk [0x00007FFCBA8A7374+20]
-	RtlUserThreadStart [0x00007FFCBC01CC91+33]
-</status>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0, window.scrollY+300)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20250701 23:20:59.432" level="INFO">Executing JavaScript:
+window.scrollTo(0, window.scrollY+300)
+Without any arguments.</msg>
+<status status="PASS" starttime="20250701 23:20:59.429" endtime="20250701 23:20:59.476"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[contains(text(),'Alerts, Frame')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20250701 23:20:59.482" level="INFO">Clicking element '//*[contains(text(),'Alerts, Frame')]'.</msg>
+<status status="PASS" starttime="20250701 23:20:59.478" endtime="20250701 23:21:00.082"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//span[text()='Frames']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20250701 23:21:00.084" endtime="20250701 23:21:00.202"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0, window.scrollY+150)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20250701 23:21:00.205" level="INFO">Executing JavaScript:
+window.scrollTo(0, window.scrollY+150)
+Without any arguments.</msg>
+<status status="PASS" starttime="20250701 23:21:00.204" endtime="20250701 23:21:00.229"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[text()='Frames']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20250701 23:21:00.233" level="INFO">Clicking element '//span[text()='Frames']'.</msg>
+<status status="PASS" starttime="20250701 23:21:00.230" endtime="20250701 23:21:00.627"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20250701 23:21:02.639" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20250701 23:21:00.636" endtime="20250701 23:21:02.639"/>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>frame1</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20250701 23:21:02.646" level="INFO">Selecting frame 'frame1'.</msg>
+<status status="PASS" starttime="20250701 23:21:02.643" endtime="20250701 23:21:02.773"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${text}</var>
+<arg>//h1[@id='sampleHeading']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20250701 23:21:02.835" level="INFO">${text} = This is a sample page</msg>
+<status status="PASS" starttime="20250701 23:21:02.774" endtime="20250701 23:21:02.835"/>
+</kw>
+<status status="PASS" starttime="20250701 23:20:49.266" endtime="20250701 23:21:02.835"/>
 </test>
-<status status="FAIL" starttime="20250630 18:39:56.833" endtime="20250630 18:41:37.219"/>
+<status status="PASS" starttime="20250701 23:20:48.720" endtime="20250701 23:21:02.838"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Frames">Frames</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Frames">Frames</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20250630 18:41:37.128" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=137.0.7151.120)
-Stacktrace:
-	GetHandleVerifier [0x00007FF7CE7024F5+78069]
-	GetHandleVerifier [0x00007FF7CE702550+78160]
-	(No symbol) [0x00007FF7CE4B933A]
-	(No symbol) [0x00007FF7CE491B81]
-	(No symbol) [0x00007FF7CE53EDBE]
-	(No symbol) [0x00007FF7CE55EE32]
-	(No symbol) [0x00007FF7CE5372A3]
-	(No symbol) [0x00007FF7CE5007B8]
-	(No symbol) [0x00007FF7CE501523]
-	GetHandleVerifier [0x00007FF7CE9AFF5D+2886493]
-	GetHandleVerifier [0x00007FF7CE9AA848+2864200]
-	GetHandleVerifier [0x00007FF7CE9C7BD3+2983891]
-	GetHandleVerifier [0x00007FF7CE71CF9A+187290]
-	GetHandleVerifier [0x00007FF7CE72548F+221327]
-	GetHandleVerifier [0x00007FF7CE70A4E4+110820]
-	GetHandleVerifier [0x00007FF7CE70A692+111250]
-	GetHandleVerifier [0x00007FF7CE6F0919+5401]
-	BaseThreadInitThunk [0x00007FFCBA8A7374+20]
-	RtlUserThreadStart [0x00007FFCBC01CC91+33]
-</msg>
 </errors>
 </robot>
