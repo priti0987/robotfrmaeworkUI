@@ -1,79 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.9.1 on win32)" generated="20250701 23:20:48.716" rpa="false" schemaversion="3">
-<suite id="s1" name="Frames" source="C:\RobotFrameWork_UI\TestCases\frames.robot">
-<test id="s1-t1" name="Handling Frame" line="5">
+<robot generator="Robot 6.0.2 (Python 3.9.1 on win32)" generated="20250707 19:25:52.352" rpa="false" schemaversion="3">
+<suite id="s1" name="Login test" source="C:\RobotFrameWork_UI\POM\TestCase\Login_test.robot">
+<test id="s1-t1" name="LoginTest" line="11">
+<kw name="OpenMyBrowser" library="LoginKeyword">
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>https://demoqa.com</arg>
-<arg>Chrome</arg>
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20250701 23:20:49.268" level="INFO">Opening browser 'Chrome' to base url 'https://demoqa.com'.</msg>
-<status status="PASS" starttime="20250701 23:20:49.267" endtime="20250701 23:20:57.369"/>
+<msg timestamp="20250707 19:25:52.770" level="INFO">Opening browser 'Chrome' to base url 'https://demo.guru99.com/test/newtours/'.</msg>
+<status status="PASS" starttime="20250707 19:25:52.769" endtime="20250707 19:25:57.058"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20250701 23:20:57.370" endtime="20250701 23:20:57.418"/>
+<status status="PASS" starttime="20250707 19:25:57.058" endtime="20250707 19:25:57.120"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20250701 23:20:59.428" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20250701 23:20:57.418" endtime="20250701 23:20:59.428"/>
+<status status="PASS" starttime="20250707 19:25:52.769" endtime="20250707 19:25:57.120"/>
 </kw>
-<kw name="Execute Javascript" library="SeleniumLibrary">
-<arg>window.scrollTo(0, window.scrollY+300)</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20250701 23:20:59.432" level="INFO">Executing JavaScript:
-window.scrollTo(0, window.scrollY+300)
-Without any arguments.</msg>
-<status status="PASS" starttime="20250701 23:20:59.429" endtime="20250701 23:20:59.476"/>
+<kw name="EnterUserName" library="LoginKeyword">
+<arg>${user}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_loginUserName}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20250707 19:25:57.124" level="INFO">Typing text 'Priti' into text field 'name:userName'.</msg>
+<status status="PASS" starttime="20250707 19:25:57.123" endtime="20250707 19:25:57.322"/>
 </kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>//*[contains(text(),'Alerts, Frame')]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20250701 23:20:59.482" level="INFO">Clicking element '//*[contains(text(),'Alerts, Frame')]'.</msg>
-<status status="PASS" starttime="20250701 23:20:59.478" endtime="20250701 23:21:00.082"/>
+<status status="PASS" starttime="20250707 19:25:57.122" endtime="20250707 19:25:57.322"/>
 </kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>//span[text()='Frames']</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20250701 23:21:00.084" endtime="20250701 23:21:00.202"/>
+<kw name="EnterPassword" library="LoginKeyword">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_loginPassword}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20250707 19:25:57.326" level="INFO">Typing text 'Priti' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20250707 19:25:57.325" endtime="20250707 19:25:57.439"/>
 </kw>
-<kw name="Execute Javascript" library="SeleniumLibrary">
-<arg>window.scrollTo(0, window.scrollY+150)</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20250701 23:21:00.205" level="INFO">Executing JavaScript:
-window.scrollTo(0, window.scrollY+150)
-Without any arguments.</msg>
-<status status="PASS" starttime="20250701 23:21:00.204" endtime="20250701 23:21:00.229"/>
+<status status="PASS" starttime="20250707 19:25:57.325" endtime="20250707 19:25:57.439"/>
 </kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>//span[text()='Frames']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20250701 23:21:00.233" level="INFO">Clicking element '//span[text()='Frames']'.</msg>
-<status status="PASS" starttime="20250701 23:21:00.230" endtime="20250701 23:21:00.627"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20250701 23:21:02.639" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20250701 23:21:00.636" endtime="20250701 23:21:02.639"/>
-</kw>
-<kw name="Select Frame" library="SeleniumLibrary">
-<arg>frame1</arg>
-<doc>Sets frame identified by ``locator`` as the current frame.</doc>
-<msg timestamp="20250701 23:21:02.646" level="INFO">Selecting frame 'frame1'.</msg>
-<status status="PASS" starttime="20250701 23:21:02.643" endtime="20250701 23:21:02.773"/>
-</kw>
-<kw name="Get Text" library="SeleniumLibrary">
-<var>${text}</var>
-<arg>//h1[@id='sampleHeading']</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20250701 23:21:02.835" level="INFO">${text} = This is a sample page</msg>
-<status status="PASS" starttime="20250701 23:21:02.774" endtime="20250701 23:21:02.835"/>
-</kw>
-<status status="PASS" starttime="20250701 23:20:49.266" endtime="20250701 23:21:02.835"/>
+<status status="PASS" starttime="20250707 19:25:52.767" endtime="20250707 19:25:57.440"/>
 </test>
-<status status="PASS" starttime="20250701 23:20:48.720" endtime="20250701 23:21:02.838"/>
+<status status="PASS" starttime="20250707 19:25:52.354" endtime="20250707 19:25:57.442"/>
 </suite>
 <statistics>
 <total>
@@ -82,7 +51,7 @@ Without any arguments.</msg>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Frames">Frames</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Login test">Login test</stat>
 </suite>
 </statistics>
 <errors>
