@@ -1,48 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.9.1 on win32)" generated="20250707 19:25:52.352" rpa="false" schemaversion="3">
-<suite id="s1" name="Login test" source="C:\RobotFrameWork_UI\POM\TestCase\Login_test.robot">
+<robot generator="Robot 6.0.2 (Python 3.9.1 on win32)" generated="20250707 20:32:36.302" rpa="false" schemaversion="3">
+<suite id="s1" name="RegistrationTest" source="C:\RobotFrameWork_UI\POM\TestCase\RegistrationTest.robot">
 <test id="s1-t1" name="LoginTest" line="11">
-<kw name="OpenMyBrowser" library="LoginKeyword">
+<kw name="OpenMyBrowser" library="Registration_keywords">
 <arg>${SiteUrl}</arg>
 <arg>${Browser}</arg>
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${SiteUrl}</arg>
 <arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20250707 19:25:52.770" level="INFO">Opening browser 'Chrome' to base url 'https://demo.guru99.com/test/newtours/'.</msg>
-<status status="PASS" starttime="20250707 19:25:52.769" endtime="20250707 19:25:57.058"/>
+<msg timestamp="20250707 20:32:37.058" level="INFO">Opening browser 'Chrome' to base url 'https://demo.guru99.com/test/newtours/'.</msg>
+<status status="PASS" starttime="20250707 20:32:37.057" endtime="20250707 20:32:42.821"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20250707 19:25:57.058" endtime="20250707 19:25:57.120"/>
+<status status="PASS" starttime="20250707 20:32:42.822" endtime="20250707 20:32:42.897"/>
 </kw>
-<status status="PASS" starttime="20250707 19:25:52.769" endtime="20250707 19:25:57.120"/>
+<status status="PASS" starttime="20250707 20:32:37.056" endtime="20250707 20:32:42.897"/>
 </kw>
-<kw name="EnterUserName" library="LoginKeyword">
-<arg>${user}</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${txt_loginUserName}</arg>
-<arg>${username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20250707 19:25:57.124" level="INFO">Typing text 'Priti' into text field 'name:userName'.</msg>
-<status status="PASS" starttime="20250707 19:25:57.123" endtime="20250707 19:25:57.322"/>
-</kw>
-<status status="PASS" starttime="20250707 19:25:57.122" endtime="20250707 19:25:57.322"/>
-</kw>
-<kw name="EnterPassword" library="LoginKeyword">
-<arg>${password}</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${txt_loginPassword}</arg>
-<arg>${password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20250707 19:25:57.326" level="INFO">Typing text 'Priti' into text field 'name:password'.</msg>
-<status status="PASS" starttime="20250707 19:25:57.325" endtime="20250707 19:25:57.439"/>
-</kw>
-<status status="PASS" starttime="20250707 19:25:57.325" endtime="20250707 19:25:57.439"/>
-</kw>
-<status status="PASS" starttime="20250707 19:25:52.767" endtime="20250707 19:25:57.440"/>
+<status status="PASS" starttime="20250707 20:32:37.055" endtime="20250707 20:32:42.899"/>
 </test>
-<status status="PASS" starttime="20250707 19:25:52.354" endtime="20250707 19:25:57.442"/>
+<status status="PASS" starttime="20250707 20:32:36.306" endtime="20250707 20:32:42.902"/>
 </suite>
 <statistics>
 <total>
@@ -51,7 +29,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Login test">Login test</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="RegistrationTest">RegistrationTest</stat>
 </suite>
 </statistics>
 <errors>
